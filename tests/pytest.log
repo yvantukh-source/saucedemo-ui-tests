@@ -1,0 +1,58 @@
+INFO     swag-tests:test_checkout.py:12 TEST full_checkout_flow
+INFO     swag-tests.LoginPage:login_page.py:14 Loading login page
+INFO     swag-tests.LoginPage:login_page.py:18 Logging in: username='standard_user'
+INFO     swag-tests.InventoryPage:inventory_page.py:35 Adding all 6 items to cart
+INFO     swag-tests.InventoryPage:inventory_page.py:44 Navigating to cart
+INFO     swag-tests.CartPage:cart_page.py:27 Proceeding to checkout
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:14 Filling checkout info: 'John', 'Doe', '12345'
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:20 Clicking continue on checkout info
+INFO     swag-tests.CheckoutOverviewPage:checkout_overview_page.py:19 Checkout totals: {'item_total': 'Item total: $129.94', 'tax': 'Tax: $10.40', 'total': 'Total: $140.34'}
+INFO     swag-tests.CheckoutOverviewPage:checkout_overview_page.py:23 Finishing checkout
+INFO     swag-tests.CheckoutCompletePage:checkout_complete_page.py:12 Waiting for completion header to appear
+INFO     swag-tests.CheckoutCompletePage:checkout_complete_page.py:17 Completion header text: 'Thank you for your order!' → complete=False
+INFO     swag-tests:test_checkout.py:50 TEST checkout_info_validation: missing First Name is required
+INFO     swag-tests.LoginPage:login_page.py:14 Loading login page
+INFO     swag-tests.LoginPage:login_page.py:18 Logging in: username='standard_user'
+INFO     swag-tests.InventoryPage:inventory_page.py:40 Adding first item to cart
+INFO     swag-tests.InventoryPage:inventory_page.py:44 Navigating to cart
+INFO     swag-tests.CartPage:cart_page.py:27 Proceeding to checkout
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:14 Filling checkout info: '', 'Doe', '12345'
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:20 Clicking continue on checkout info
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:25 Checkout info error: 'Error: First Name is required'
+INFO     swag-tests:test_checkout.py:67 TEST cancel_checkout
+INFO     swag-tests.LoginPage:login_page.py:14 Loading login page
+INFO     swag-tests.LoginPage:login_page.py:18 Logging in: username='standard_user'
+INFO     swag-tests.InventoryPage:inventory_page.py:40 Adding first item to cart
+INFO     swag-tests.InventoryPage:inventory_page.py:44 Navigating to cart
+INFO     swag-tests.CartPage:cart_page.py:27 Proceeding to checkout
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:14 Filling checkout info: 'John', 'Doe', '12345'
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:20 Clicking continue on checkout info
+INFO     swag-tests.CheckoutOverviewPage:checkout_overview_page.py:27 Cancelling checkout
+INFO     swag-tests:test_checkout.py:87 TEST back_home_from_complete
+INFO     swag-tests.LoginPage:login_page.py:14 Loading login page
+INFO     swag-tests.LoginPage:login_page.py:18 Logging in: username='standard_user'
+INFO     swag-tests.InventoryPage:inventory_page.py:40 Adding first item to cart
+INFO     swag-tests.InventoryPage:inventory_page.py:44 Navigating to cart
+INFO     swag-tests.CartPage:cart_page.py:27 Proceeding to checkout
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:14 Filling checkout info: 'John', 'Doe', '12345'
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:20 Clicking continue on checkout info
+INFO     swag-tests.CheckoutOverviewPage:checkout_overview_page.py:23 Finishing checkout
+INFO     swag-tests.CheckoutCompletePage:checkout_complete_page.py:21 Clicking Back Home
+INFO     swag-tests:test_checkout.py:50 TEST checkout_info_validation: missing Last Name is required
+INFO     swag-tests.LoginPage:login_page.py:14 Loading login page
+INFO     swag-tests.LoginPage:login_page.py:18 Logging in: username='standard_user'
+INFO     swag-tests.InventoryPage:inventory_page.py:40 Adding first item to cart
+INFO     swag-tests.InventoryPage:inventory_page.py:44 Navigating to cart
+INFO     swag-tests.CartPage:cart_page.py:27 Proceeding to checkout
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:14 Filling checkout info: 'John', '', '12345'
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:20 Clicking continue on checkout info
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:25 Checkout info error: 'Error: Last Name is required'
+INFO     swag-tests:test_checkout.py:50 TEST checkout_info_validation: missing Postal Code is required
+INFO     swag-tests.LoginPage:login_page.py:14 Loading login page
+INFO     swag-tests.LoginPage:login_page.py:18 Logging in: username='standard_user'
+INFO     swag-tests.InventoryPage:inventory_page.py:40 Adding first item to cart
+INFO     swag-tests.InventoryPage:inventory_page.py:44 Navigating to cart
+INFO     swag-tests.CartPage:cart_page.py:27 Proceeding to checkout
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:14 Filling checkout info: 'John', 'Doe', ''
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:20 Clicking continue on checkout info
+INFO     swag-tests.CheckoutInfoPage:checkout_info_page.py:25 Checkout info error: 'Error: Postal Code is required'
